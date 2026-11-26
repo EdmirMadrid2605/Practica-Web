@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traductor | Ordenador</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand-mark" href="#inicio">A &#25991</a>
+      <a class="topbar-title" href="#inicio">Traductor</a>
+    </header>
+
+    <form class="search-row" action="https://translate.google.com/" method="get" target="_blank">
+      <label class="search-box">
+        <input type="search" name="text" placeholder="Introduce una palabra" aria-label="Palabra" required>
+        <input type="hidden" name="sl" value="auto">
+        <input type="hidden" name="op" value="translate">
+        <button class="search-button" type="submit" aria-label="Buscar">&#128270;</button>
+      </label>
+
+      <label class="language-picker">
+        <select name="tl" aria-label="Idioma">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+          <option value="fr">Français</option>
+        </select>
+      </label>
+    </form>
+
+    <main class="definition-page" id="inicio">
+      <div class="word-heading">
+        <h1>Ordenador</h1>
+        <span class="speak-button">&#9654</span>
+      </div>
+
+      <div class="translation">
+        <div class="section-heading">
+          <span></span>
+          <h2>Traducción</h2>
+          <span></span>
+        </div>
+
+        <ul class="definitions">
+          <li><p><strong>Ordenador:</strong> Máquina electrónica capaz de almacenar información y tratarla automáticamente mediante operaciones matemáticas y lógicas controladas por programas informáticos.</p></li>
+          <li><p><strong>Ordenador compatible:</strong> Ordenador capaz de ejecutar los mismos programas que otros ordenadores del mismo tipo.</p></li>
+          <li><p><strong>Ordenador personal:</strong> Ordenador de sobremesa que incluye unidad central, teclado, pantalla y una o más unidades de disco y que puede funcionar sin estar conectado a una red informática.</p></li>
+          <li><p><strong>Ordenador portátil:</strong> Ordenador personal de peso y tamaño tan reducidos que se puede llevar cómodamente de un lado a otro, como si fuera un maletín; una batería incorporada le permite cierta autonomía de funcionamiento.</p></li>
+        </ul>
+      </div>
+
+      <p class="synonyms">
+        <span>Sinónimos:</span>
+        <a href="https://www.google.com/search?q=computador+definici%C3%B3n" target="_blank">Computador</a>
+        <a href="https://www.google.com/search?q=procesadora+definici%C3%B3n" target="_blank">Procesadora</a>
+        <a href="https://www.google.com/search?q=computadora+definici%C3%B3n" target="_blank">Computadora</a>
+      </p>
+    </main>
+
+    <footer class="footer">Todos los derechos reservados a Víctor Robles &copy;</footer>
+  </div>
+</body>
+</html>
