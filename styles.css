@@ -1,0 +1,228 @@
+/* Reglas sencillas para mantener el diseño de la página */
+body {
+  margin: 0;
+  background: white;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #3264c5;
+  text-decoration: none;
+}
+
+.page-shell {
+  width: 600px;
+  max-width: 90%;
+  margin: 15px auto;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-mark {
+  padding: 4px 7px;
+  border-radius: 5px;
+  background: #3264c5;
+  color: white;
+  font-weight: bold;
+}
+
+.topbar-title {
+  color: #174bc4;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.search-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.search-box,
+.language-picker {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f3f3f3;
+}
+
+.search-box {
+  width: 73%;
+}
+
+.search-box input {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  text-align: center;
+  font-size: 14px;
+}
+
+.search-box input::placeholder {
+  color: #333;
+}
+
+.search-button {
+  padding: 3px;
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.language-picker {
+  width: 24%;
+}
+
+.language-picker select {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  font-size: 14px;
+}
+
+.definition-page {
+  margin-top: 48px;
+  animation: aparecer 0.7s ease-out;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    margin-top: 60px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 48px;
+  }
+}
+
+.word-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.word-heading h1 {
+  margin: 0;
+  color: #292929;
+  font-size: 46px;
+}
+
+.speak-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background: #4aace4;
+  color: white;
+}
+
+.speak-button {
+  font-size: 24px;
+}
+
+.translation {
+  margin-top: 40px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+}
+
+.section-heading span {
+  height: 1px;
+  flex: 1;
+  background: #ededed;
+}
+
+.section-heading h2 {
+  margin: 0 12px;
+  font-size: 20px;
+}
+
+.definitions {
+  margin-top: 55px;
+  padding-left: 28px;
+  line-height: 1.6;
+}
+
+.definitions li {
+  margin-bottom: 30px;
+  padding-left: 2px;
+}
+
+.definitions p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.definitions strong {
+  color: #386bc2;
+}
+
+.synonyms {
+  margin-top: 40px;
+  margin-bottom: 22px;
+  color: #3264c5;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.synonyms span {
+  margin-right: 8px;
+  color: #999;
+}
+
+.synonyms a {
+  margin-right: 4px;
+  transition: color 0.2s;
+}
+
+.synonyms a:hover {
+  color: #173f91;
+  text-decoration: underline;
+}
+
+.footer {
+  padding-top: 16px;
+  border-top: 1px solid #ededed;
+  color: #999;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 600px) {
+  .search-row {
+    margin-top: 30px;
+  }
+
+  .search-box {
+    width: 67%;
+  }
+
+  .language-picker {
+    width: 30%;
+  }
+
+  .word-heading h1 {
+    font-size: 36px;
+  }
+
+  .speak-button {
+    width: 56px;
+    height: 56px;
+  }
+}
